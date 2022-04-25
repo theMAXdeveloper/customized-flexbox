@@ -125,7 +125,7 @@ body {
     text-shadow: 1px 1px 1px black;
     font-family: 'Spartan', sans-serif;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.8em;
     border-radius: 20px;
     padding: 0px 30px;
@@ -135,6 +135,10 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+#content p {
+    justify-content: center;
 }
 
 #content p span {
@@ -242,8 +246,18 @@ body {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media (max-width: 450px) {
     /* Style adjustments for viewports that meet the condition */
+    #content {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 330px) {
+    /* Style adjustments for viewports that meet the condition */
+    #content {
+        font-size: 0.7em;
+    }
 }
 
 @media print,
